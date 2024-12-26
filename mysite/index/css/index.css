@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 form label {
@@ -28,14 +28,18 @@ form label {
 }
 
 form input {
-    width: calc(100% - 40px);
+    width: 15em;
     padding: 5px;
     margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     text-align: center;
 }
 
 button {
     margin-top: 20px;
+    margin-bottom: 10px;
     padding: 10px 15px;
     background-color: #007bff;
     color: white;
@@ -58,19 +62,17 @@ button:hover {
 
 /* ヘルプボタン */
 #helpButton {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: #007bff;
+    background-color: #96a0a8;
     color: white;
     border: none;
     padding: 10px 15px;
+    margin-bottom: 20px;
     border-radius: 4px;
     cursor: pointer;
 }
 
 #helpButton:hover {
-    background-color: #0056b3;
+    background-color: #616161;
 }
 
 /* ポップアップ */

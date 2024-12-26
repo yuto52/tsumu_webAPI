@@ -11,20 +11,20 @@
 
 <!-- ボディここから -->
 <body>
-    <!-- ヘルプボタン -->
-    <button id="helpButton">使い方</button>
 
     <div class="container">
         <h1>コイン補正<br>計算ツール</h1>
+        <!-- ヘルプボタン -->
+        <button id="helpButton">使い方</button>
         <form id="coinForm">
             <label for="chane">消去数 :</label>
-            <input type="number" id="chane" name="chane" required>
+            <input type="number" id="chane" name="chane" required min="0" max="10000">
 
             <label for="beforeCoin">元のコイン枚数 :</label>
-            <input type="number" id="beforeCoin" name="beforeCoin" required>
+            <input type="number" id="beforeCoin" name="beforeCoin" required min="0" max="100000000">
 
             <label for="afterCoin">消去後のコイン枚数 :</label>
-            <input type="number" id="afterCoin" name="afterCoin" required>
+            <input type="number" id="afterCoin" name="afterCoin" required min="0" max="100000000">
 
             <button type="button" id="calculateButton">計算</button>
         </form>

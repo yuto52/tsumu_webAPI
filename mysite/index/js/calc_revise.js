@@ -72,16 +72,27 @@ document.getElementById("calculateButton").addEventListener("click", () => {
         alert("すべてのフィールドを正しく入力してください。");
         return;
     }
+    if (chane < 0 || chane > 1000000) {
+        alert("消去数は0以上1000000以下の値を入力してください");
+        return;
+    }
+    if (beforeCoin < 0 || beforeCoin > 100000000) {
+        alert("消去前のコイン数は0以上100000000以下の値を入力してください");
+        return;
+    }
+    if (afterCoin < 0 || afterCoin > 100000000) {
+        alert("消去後のコイン数は0以上100000000以下の値を入力してください");
+        return;
+    }
 
     const getCoin = afterCoin - beforeCoin;
-    const originalCoin = calcOriginalCoin(chane);
-    const rate = (getCoin / originalCoin).toFixed(3);
-    const { revise, message } = searchRevise(chane, getCoin);
-
     if (getCoin <= 0) {
         alert("消去前または消去後のコイン数を正しく入力してください");
         return;
     }
+    const originalCoin = calcOriginalCoin(chane);
+    const rate = (getCoin / originalCoin).toFixed(3);
+    const { revise, message } = searchRevise(chane, getCoin);
 
     document.getElementById("getCoin").textContent = `獲得コイン : ${getCoin}`;
     document.getElementById("rate").textContent = `コイン増加率 : ${rate}`;
