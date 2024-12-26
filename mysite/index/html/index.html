@@ -11,7 +11,9 @@
 
 <!-- ボディここから -->
 <body>
-    <!-- コンテンツのボックス -->
+    <!-- ヘルプボタン -->
+    <button id="helpButton">使い方</button>
+
     <div class="container">
         <h1>コイン補正<br>計算ツール</h1>
         <form id="coinForm">
@@ -33,7 +35,26 @@
             <p id="just"></p>
         </div>
     </div>
-    <script src="../js/index.js"></script>
+
+    <!-- ポップアップ -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>-使い方-</h2>
+            <p>消去数、消去前後のコイン枚数を入力して、計算ボタンを押してください</p>
+            <p>下に赤文字で「ジャスト！」と出たら計算成功です！</p>
+            <p>出なかったときは、予想される補正値を表示しています。</p>
+            <p>より正しく計算したい人は以下をチェックしてください:</p>
+            <ul>
+                <li>大ツムを消していないか</li>
+                <li>ボムなどの消去を見落としていないか</li>
+                <li>コイン数を見間違えていないか</li>
+            </ul>
+            <button id="closePopup">閉じる</button>
+        </div>
+    </div>
+
+    <script src="../js/calc_revise.js"></script>
+    <script src="../js/help.js"></script>
 </body>
 <!-- ボディここまで -->
 </html>
