@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コイン計算</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>コイン補正<br>計算ツール</h1>
+        <form id="coinForm">
+            <label for="chane">消去数 :</label>
+            <input type="number" id="chane" name="chane" required>
+
+            <label for="beforeCoin">元のコイン枚数 :</label>
+            <input type="number" id="beforeCoin" name="beforeCoin" required>
+
+            <label for="afterCoin">消去後のコイン枚数 :</label>
+            <input type="number" id="afterCoin" name="afterCoin" required>
+
+            <button type="button" id="calculateButton">計算</button>
+        </form>
+        <div id="result">
+            <p id="getCoin">獲得コイン : </p>
+            <p id="rate">コイン増加率 : </p>
+            <p id="revise">コイン補正 : </p>
+            <p id="just"></p>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+</html>
