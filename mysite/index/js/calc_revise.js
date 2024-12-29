@@ -72,8 +72,8 @@ document.getElementById("calculateButton").addEventListener("click", () => {
         alert("すべてのフィールドを正しく入力してください。");
         return;
     }
-    if (chane < 0 || chane > 1000000) {
-        alert("消去数は0以上1000000以下の値を入力してください");
+    if (chane < 4 || chane > 1000000) {
+        alert("消去数は4以上1000000以下の値を入力してください");
         return;
     }
     if (beforeCoin < 0 || beforeCoin > 100000000) {
