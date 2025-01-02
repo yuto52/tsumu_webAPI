@@ -28,6 +28,7 @@ form label {
 }
 
 form input {
+    font-size: 16px;
     width: 15em;
     padding: 5px;
     margin-top: 5px;
@@ -38,7 +39,8 @@ form input {
 }
 
 button {
-    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 15px;
     margin-bottom: 10px;
     padding: 10px 15px;
     background-color: #007bff;
@@ -62,11 +64,11 @@ button:hover {
 
 /* ヘルプボタン */
 #helpButton {
+    margin-top: 10px;
     background-color: #96a0a8;
     color: white;
     border: none;
     padding: 10px 15px;
-    margin-bottom: 20px;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -92,6 +94,7 @@ button:hover {
     background: white;
     border-radius: 8px;
     padding: 20px;
+    margin: 10px;
     width: 90%;
     max-width: 400px;
     text-align: left;
